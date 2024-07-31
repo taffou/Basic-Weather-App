@@ -24,13 +24,13 @@ async function checkweather(city){
     document.querySelector(".windy").innerHTML = data.wind.speed + "km/h";
 
     if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "./Simple Weather App/Assets/rainy.jpg"
+        weatherIcon.src = "./Assets/rainy.jpg";
     }else if(data.weather[0].main == "Clear"){
-        weatherIcon.src = "./Simple Weather App/Assets/sunny.jpg"
+        weatherIcon.src = "./Assets/sunny.jpg";
     }else if(data.weather[0].main == "Clouds"){
-        weatherIcon.src = "./Simple Weather App/Assets/sunny_cloudy.jpg"
+        weatherIcon.src = "./Assets/sunny_cloudy.jpg";
     }else if(data.weather[0].main == "Mist"){
-        weatherIcon.src = "./Simple Weather App/Assets/mist.jpg"
+        weatherIcon.src = "./Assets/mist.jpg";
     }
 
     document.querySelector(".weather").style.display = "block";
